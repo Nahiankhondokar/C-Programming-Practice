@@ -2,8 +2,7 @@
 
 int main ()
 {
-   int num = 5;
-   if(num < 10){
-    
-   }
+   printf("hello world");
+
+   return 0;
 }
