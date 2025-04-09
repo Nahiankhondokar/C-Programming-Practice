@@ -40,24 +40,24 @@
 
 
 // while loop
-// int main ()
-// {
-//    int i = 1;
-//    while(i < 10)
-//    {
-//       printf("%d", i);
-//       i++;
-//    }
-// }
+int main ()
+{
+   int i = -10;
+   while(i < 4)
+   {
+      printf("%d", i);
+      i+=2;
+   }
+}
 
 
 // do while
-int main ()
-{
-   int i = 1;
-   do
-   {
-      printf("%d", i);
-      i++;
-   }while(i > 10);
-}
+// int main ()
+// {
+//    int i = 1;
+//    do
+//    {
+//       printf("%d", i);
+//       i++;
+//    }while(i > 10);
+// }
