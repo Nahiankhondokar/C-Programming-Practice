@@ -26,14 +26,26 @@
 // }
 
 // Even or Odd Number
+// int main ()
+// {
+//    int num;
+//    scanf("%d", &num);
+//       if(num%2 == 0){
+//          printf("Even number");
+//       }else {
+//          printf("odd number");
+//       }
+//    return 0;
+// }
+
+
+// while loop
 int main ()
 {
-   int num;
-   scanf("%d", &num);
-      if(num%2 == 0){
-         printf("Even number");
-      }else {
-         printf("odd number");
-      }
-   return 0;
+   int i = 1;
+   while(i < 10)
+   {
+      printf("%d", i);
+      i++;
+   }
 }
