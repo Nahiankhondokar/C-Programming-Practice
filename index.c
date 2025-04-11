@@ -40,15 +40,15 @@
 
 
 // while loop
-int main ()
-{
-   int i = -10;
-   while(i < 4)
-   {
-      printf("%d", i);
-      i+=2;
-   }
-}
+// int main ()
+// {
+//    int i = -10;
+//    while(i < 4)
+//    {
+//       printf("%d", i);
+//       i+=2;
+//    }
+// }
 
 
 // do while
@@ -61,3 +61,16 @@ int main ()
 //       i++;
 //    }while(i > 10);
 // }
+
+
+int main()
+{
+   int num;
+   scanf("%d", &num);
+   for(int i=1; i<num; i++)
+   {
+      if(i%3 == 0 && i%7 == 0){
+         printf("%d \n", i);
+      }
+   }
+}
