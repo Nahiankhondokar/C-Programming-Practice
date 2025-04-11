@@ -63,14 +63,35 @@
 // }
 
 
-int main()
-{
-   int num;
-   scanf("%d", &num);
-   for(int i=1; i<num; i++)
-   {
-      if(i%3 == 0 && i%7 == 0){
-         printf("%d \n", i);
-      }
-   }
-}
+// simple divisible number
+// int main()
+// {
+//    int num;
+//    scanf("%d", &num);
+//    for(int i=1; i<num; i++)
+//    {
+//       if(i%3 == 0 && i%7 == 0){
+//          printf("%d \n", i);
+//       }
+//    }
+// }
+
+
+// simple conditional problem
+// int main()
+// {
+//    int amount;
+//    scanf("%d", &amount);
+//    if(amount > 1000){
+//       if(amount >= 1500){
+//          printf("I will buy Punjabi\nI will buy new shoes\nAlisa will buy new shoes");
+//       }else {
+//          printf("I will buy Punjabi");
+//       }
+      
+//    }else {
+//       printf("Bad luck!");
+//    }
+// }
+
+
