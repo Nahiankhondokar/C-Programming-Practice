@@ -1,16 +1,32 @@
 #include<stdio.h>
 int main ()
 {
-   int a;
-   scanf("%d", &a);
-   int singleDigit = a/1000;
-    if(singleDigit % 2 == 0){
-        printf("EVEN");
+    int ch;
+    char convert;
+    scanf("%c", &ch);
+    if(ch <= 90){
+         convert = ch + 32;
+    }else {
+         convert = ch - 32;
     }
-    else {
-        printf("ODD");
+    printf("%c", convert);
+
+    return 0;
+}
+
+#include<stdio.h>
+int main ()
+{
+    int ch;
+    char convert;
+    scanf("%c", &ch);
+    if(ch >= 'a' && ch <= 'z'){
+         convert = ch - 32;
+    }else {
+         convert = ch + 32;
     }
-    
+    printf("%c", convert);
+
     return 0;
 }
 
