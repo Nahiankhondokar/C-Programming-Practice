@@ -2,33 +2,51 @@
 int main ()
 {
     int ch;
-    char convert;
     scanf("%c", &ch);
-    if(ch <= 90){
-         convert = ch + 32;
+    if(ch >= '0' && ch <= '9'){
+          printf("IS DIGIT");
     }else {
-         convert = ch - 32;
+          printf("ALPHA\n");
+          if(ch >= 'a' && ch <= 'z'){
+               printf("IS SMALL");
+          }else {
+               printf("IS CAPITAL");
+          }
     }
-    printf("%c", convert);
 
     return 0;
 }
 
-#include<stdio.h>
-int main ()
-{
-    int ch;
-    char convert;
-    scanf("%c", &ch);
-    if(ch >= 'a' && ch <= 'z'){
-         convert = ch - 32;
-    }else {
-         convert = ch + 32;
-    }
-    printf("%c", convert);
 
-    return 0;
-}
+// int main ()
+// {
+//     int ch;
+//     char convert;
+//     scanf("%c", &ch);
+//     if(ch <= 90){
+//          convert = ch + 32;
+//     }else {
+//          convert = ch - 32;
+//     }
+//     printf("%c", convert);
+
+//     return 0;
+// }
+
+// int main ()
+// {
+//     int ch;
+//     char convert;
+//     scanf("%c", &ch);
+//     if(ch >= 'a' && ch <= 'z'){
+//          convert = ch - 32;
+//     }else {
+//          convert = ch + 32;
+//     }
+//     printf("%c", convert);
+
+//     return 0;
+// }
 
 // int main ()
 // {
