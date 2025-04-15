@@ -1,17 +1,25 @@
 #include<stdio.h>
 int main ()
 {
-    int ch;
-    scanf("%c", &ch);
-    if(ch >= '0' && ch <= '9'){
-          printf("IS DIGIT");
-    }else {
-          if(ch >= 'a' && ch <= 'z'){
-               printf("ALPHA \nIS SMALL");
-          }else {
-               printf("ALPHA\nIS CAPITAL");
-          }
-    }
+    int a, b, c, max, min;
+    scanf("%d %d %d", &a, &b, &c);
 
+     if(a > b && a > c){
+          max = a;
+     }else if(b > a && b > c){
+          max = b;
+     }else if(c > a && c > b){
+          max = c;
+     }
+
+     if(a < b && a < c){
+          min = a;
+     }else if(b < a && b < c){
+          min = b;
+     }else if(c < a && c < b){
+          min = c;
+     }
+
+     printf("%d %d", max, min);
     return 0;
 }
