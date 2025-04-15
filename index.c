@@ -1,19 +1,35 @@
 #include<stdio.h>
 int main ()
 {
-    int a, b;
-    scanf("%d %d", &a, &b);
-    if(a % b == 0){
-        printf("Multiples");
-    }else if(b % a == 0) {
-        printf("Multiples");
+   int a;
+   scanf("%d", &a);
+   int singleDigit = a/1000;
+    if(singleDigit % 2 == 0){
+        printf("EVEN");
     }
     else {
-        printf("No Multiples");
+        printf("ODD");
     }
     
     return 0;
 }
+
+// int main ()
+// {
+//     int a, b;
+//     scanf("%d %d", &a, &b);
+//     if(a % b == 0){
+//         printf("Multiples");
+//     }else if(b % a == 0) {
+//         printf("Multiples");
+//     }
+//     else {
+//         printf("No Multiples");
+//     }
+    
+//     return 0;
+// }
+
 
 // int main ()
 // {
