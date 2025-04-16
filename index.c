@@ -1,28 +1,47 @@
 #include<stdio.h>
 int main ()
 {
-    int a, b, c, max, min;
-    scanf("%d %d %d", &a, &b, &c);
-
-     if(a >= b && a >= c){
-          max = a;
-     }else if(b >= a && b >= c){
-          max = b;
-     }else if(c >= a && c >= b){
-          max = c;
+    int n;
+    scanf("%d", &n);
+     if(n < 2){
+          printf("-1");
+     }
+     for(int i=1; i<=n;i++)
+     {
+          if(i%2 == 0){
+               printf("%d\n", i);
+          }
      }
 
-     if(a <= b && a <= c){
-          min = a;
-     }else if(b <= a && b <= c){
-          min = b;
-     }else if(c <= a && c <= b){
-          min = c;
-     }
-
-     printf("%d %d", min, max);
     return 0;
 }
+
+
+
+// int main ()
+// {
+//     int a, b, c, max, min;
+//     scanf("%d %d %d", &a, &b, &c);
+
+//      if(a >= b && a >= c){
+//           max = a;
+//      }else if(b >= a && b >= c){
+//           max = b;
+//      }else if(c >= a && c >= b){
+//           max = c;
+//      }
+
+//      if(a <= b && a <= c){
+//           min = a;
+//      }else if(b <= a && b <= c){
+//           min = b;
+//      }else if(c <= a && c <= b){
+//           min = c;
+//      }
+
+//      printf("%d %d", min, max);
+//     return 0;
+// }
 
 
 // int main ()
