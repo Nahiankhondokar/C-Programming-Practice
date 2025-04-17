@@ -7,12 +7,12 @@ int main ()
     
     for(int i = 1; i<=n; i++){
        scanf("%d", &x);
-        while (x != 0)
+        do
         {
             result = x % 10;
             x = x / 10;
             printf("%d ", result);
-        }
+        }while (x != 0);
         printf("\n");
     }
     
