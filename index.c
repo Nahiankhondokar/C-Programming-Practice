@@ -1,17 +1,23 @@
 #include<stdio.h>
 int main ()
 {
-     int n;
-     int x;
-     scanf("%d", &n);
-     for(int i=1; i<=n;i++)
-     {
-          scanf("%d", &x);
-     }
-     // scanf("%d", &x);
- 
+    
     return 0;
 }
+
+// int main ()
+// {
+//      int n;
+//      int x;
+//      scanf("%d", &n);
+//      for(int i=1; i<=n;i++)
+//      {
+//           scanf("%d", &x);
+//      }
+//      // scanf("%d", &x);
+ 
+//     return 0;
+// }
 
 
 // int main ()
