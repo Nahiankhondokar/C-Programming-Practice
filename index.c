@@ -3,18 +3,38 @@ int main ()
 {
     int n;
     scanf("%d", &n);
-    if(n > 0){
-        for(int i = 1; i <= n; i++){
-            printf("%d ", i);
+    int arr[n];
+    for(int i = 0; i < n; i++){
+        scanf("%d", &arr[i]);
+    }
+    for(int j = n-1; j >= 0; j--){
+        if(j%2 != 0)
+        {
+            printf("%d ", arr[j]);
         }
-    }else {
-        for(int i = n; i <= 0; i++){
-            printf("%d ", i);
-        }
+        
     }
    
     return 0;
 }
+
+
+// int main ()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     if(n > 0){
+//         for(int i = 1; i <= n; i++){
+//             printf("%d ", i);
+//         }
+//     }else {
+//         for(int i = n; i <= 0; i++){
+//             printf("%d ", i);
+//         }
+//     }
+   
+//     return 0;
+// }
 
 
 // int main ()
