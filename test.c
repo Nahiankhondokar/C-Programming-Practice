@@ -2,9 +2,6 @@
 int main ()
 {
 
-    printf("This is test commit");
-    printf("This is test commit");
-    printf("This is test commit");
-    printf("This is test commit");
+    printf("test file");
     return 0;
 }
