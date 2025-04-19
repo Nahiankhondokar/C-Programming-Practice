@@ -1,12 +1,10 @@
 #include<stdio.h>
 int main ()
 {
-    printf("This is test commit");
 
-    for (size_t i = 0; i < 10; i++)
-    {
-        /* code */
-    }
-    
+    printf("This is test commit");
+    printf("This is test commit");
+    printf("This is test commit");
+    printf("This is test commit");
     return 0;
 }
