@@ -9,20 +9,51 @@ int main ()
         scanf("%d", &a[i]);
     }
     
-    int x;
-    scanf("%d", &x);
-    for (int j = x; j < n-1; j++)
-    {
-        a[j] = a[j+1];
+    
+    int x = 0;
+    int y = n-1;
+    while(x<y){
+        int temp = a[x];
+        a[x] = a[y];
+        a[y] = temp;
+
+        x++;
+        y--;
     }
 
-    for (int k = 0; k < n-1; k++)
+    for (int k = 0; k < n; k++)
     {
         printf("%d ", a[k]);
     }
     
     return 0;
 }
+
+// delete from an array
+// int main ()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     int a[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d", &a[i]);
+//     }
+    
+//     int x;
+//     scanf("%d", &x);
+//     for (int j = x; j < n-1; j++)
+//     {
+//         a[j] = a[j+1];
+//     }
+
+//     for (int k = 0; k < n-1; k++)
+//     {
+//         printf("%d ", a[k]);
+//     }
+    
+//     return 0;
+// }
 
 
 // insert a item in the array.
