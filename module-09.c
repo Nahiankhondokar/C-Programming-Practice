@@ -11,7 +11,7 @@ int main ()
     
     int x;
     scanf("%d", &x);
-    for (int j = x; j <= n-1; j++)
+    for (int j = x; j < n-1; j++)
     {
         a[j] = a[j+1];
     }
