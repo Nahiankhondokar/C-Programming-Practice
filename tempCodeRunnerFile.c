@@ -1,8 +1,10 @@
-x, v;
-    // scanf("%d %d", &x, &v);
-    // printf("%d ", a[5]);
-
-    // for (int j = 0; j < n; j++)
+int x;
+    // scanf("%d", &x);
+    // for (int j = n-1; j >= x; j--)
     // {
-    //     printf("%d ", a[j]);
+    //     a[j] = a[j+1];
+    //     printf("%d ", j);
+    //     printf("%d ", a[j+1]);
+    //     break;
+
     // }
