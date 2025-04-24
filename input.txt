@@ -1,2 +1,5 @@
-10
-100 200 00 200 100 200 300 5 0 1
+4
+word
+localization
+internationalization
+pneumonoultramicroscopicsilicovolcanoconiosis
