@@ -1,10 +1,9 @@
-int x;
-    // scanf("%d", &x);
-    // for (int j = n-1; j >= x; j--)
+for (int i = 0; i < s; i++)
     // {
-    //     a[j] = a[j+1];
-    //     printf("%d ", j);
-    //     printf("%d ", a[j+1]);
-    //     break;
-
+        
+    //     if(s[i] == null){
+    //        break;
+    //     }
+    //     count++;
     // }
+    // printf("%d", count);
