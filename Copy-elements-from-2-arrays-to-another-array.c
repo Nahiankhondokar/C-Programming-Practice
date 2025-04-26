@@ -8,12 +8,31 @@ int main ()
     int lengthB = strlen(strB);
     for (int i = 0; i <= lengthB; i++)
     {
-        strA[i+lengthA] = strB[i];
+        
     }
     
     printf("%s ", strA);
     return 0;
 }
+
+// String concatenation
+// int main ()
+// {
+//     char strA[50], strB[50];
+//     scanf("%s %s", &strA, &strB);    
+//     int lengthA = strlen(strA);
+//     int lengthB = strlen(strB);
+//     for (int i = 0; i <= lengthB; i++)
+//     {
+//         strA[i+lengthA] = strB[i];
+//     }
+
+//     strcat(strA, strB);
+    
+//     printf("%s ", strA);
+//     return 0;
+// }
+
 
 // integer array copy
 // int main ()
