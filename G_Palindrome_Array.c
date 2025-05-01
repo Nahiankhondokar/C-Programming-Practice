@@ -17,7 +17,9 @@ int main ()
         {
             if(arr[x] == arr[y]){
                 output = 1;
+                printf("yes");
             }else {
+                printf("no");
                 output = 0;
             }
             x++; 
