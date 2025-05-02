@@ -59,3 +59,59 @@
     
 //     return 0;
 // }
+
+
+// Question 03
+int main ()
+{
+    int n;
+    scanf("%d", &n);
+    int case1[3];
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            scanf("%d", &case1[j]);
+           
+        }
+
+        int orgDay = case1[2];
+        int multiply = case1[0]*case1[2];
+        int sum = case1[0]+case1[1];
+        int newDay = multiply/sum;
+
+        printf("%d \n", orgDay - newDay);
+    }
+
+
+
+
+
+    // int case2[3];
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     scanf("%d", &case2[i]);
+    // }
+
+    // int case3[3];
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     scanf("%d", &case3[i]);
+    // }
+
+    // int case4[3];
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     scanf("%d", &case4[i]);
+    // }
+
+
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     printf("%d \n", arr[i]);
+    // }
+
+    
+    
+    return 0;
+}
