@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 // Question 01
 // int main ()
@@ -62,56 +63,58 @@
 
 
 // Question 03
+// int main ()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     int case1[3];
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < 3; j++)
+//         {
+//             scanf("%d", &case1[j]);
+           
+//         }
+
+//         int orgDay = case1[2];
+//         int multiply = case1[0]*case1[2];
+//         int sum = case1[0]+case1[1];
+//         int newDay = multiply/sum;
+
+//         printf("%d \n", orgDay - newDay);
+//     }
+
+    
+//     return 0;
+// }
+
+
+// Question 04
 int main ()
 {
     int n;
     scanf("%d", &n);
-    int case1[3];
+    char str[10000];
+    int count[3] = {0};
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < 3; j++)
+        scanf("%s", &str);
+        for (int j = 0; j < strlen(str); j++)
         {
-            scanf("%d", &case1[j]);
-           
+            if(str[j] >= 'a' && str[j] <= 'z'){
+                count[0]++; // index 0 is small letter
+            }else if(str[j] >= 'A' && str[j] <= 'Z'){
+                count[1]++; // index 1 is capital letter
+            }else {
+                count[2]++; // index 2 is digit
+            }
+
         }
-
-        int orgDay = case1[2];
-        int multiply = case1[0]*case1[2];
-        int sum = case1[0]+case1[1];
-        int newDay = multiply/sum;
-
-        printf("%d \n", orgDay - newDay);
+        printf("%d %d %d \n", count[1], count[0], count[2]);
+        count[1] = 0; 
+        count[0] = 0; 
+        count[2] = 0;
     }
-
-
-
-
-
-    // int case2[3];
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     scanf("%d", &case2[i]);
-    // }
-
-    // int case3[3];
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     scanf("%d", &case3[i]);
-    // }
-
-    // int case4[3];
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     scanf("%d", &case4[i]);
-    // }
-
-
-    // for (int i = 0; i < 3; i++)
-    // {
-    //     printf("%d \n", arr[i]);
-    // }
-
-    
     
     return 0;
 }
