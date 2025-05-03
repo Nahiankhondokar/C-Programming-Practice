@@ -90,31 +90,64 @@
 
 
 // Question 04
+// int main ()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     char str[10000];
+//     int count[3] = {0};
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%s", &str);
+//         for (int j = 0; j < strlen(str); j++)
+//         {
+//             if(str[j] >= 'a' && str[j] <= 'z'){
+//                 count[0]++; // index 0 is small letter
+//             }else if(str[j] >= 'A' && str[j] <= 'Z'){
+//                 count[1]++; // index 1 is capital letter
+//             }else {
+//                 count[2]++; // index 2 is digit
+//             }
+
+//         }
+//         printf("%d %d %d \n", count[1], count[0], count[2]);
+//         count[1] = 0; 
+//         count[0] = 0; 
+//         count[2] = 0;
+//     }
+    
+//     return 0;
+// }
+
+
+
+// Question 05
 int main ()
 {
-    int n;
-    scanf("%d", &n);
     char str[10000];
-    int count[3] = {0};
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%s", &str);
-        for (int j = 0; j < strlen(str); j++)
-        {
-            if(str[j] >= 'a' && str[j] <= 'z'){
-                count[0]++; // index 0 is small letter
-            }else if(str[j] >= 'A' && str[j] <= 'Z'){
-                count[1]++; // index 1 is capital letter
-            }else {
-                count[2]++; // index 2 is digit
-            }
+    scanf("%s", &str);
+    char key[27] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+    int value[27] = {0};
+    int lengthAlphabet = 26;
 
+    for (int i = 0; i < strlen(str); i++)
+    {
+        for (int j = 0; j < lengthAlphabet; j++)
+        {
+            if(key[j] == str[i]){
+                value[j]++;
+            }
         }
-        printf("%d %d %d \n", count[1], count[0], count[2]);
-        count[1] = 0; 
-        count[0] = 0; 
-        count[2] = 0;
+    } 
+    
+    for (int i = 0; i < lengthAlphabet; i++)
+    {
+        if(value[i] == 0){
+            continue;
+        }
+        printf("%c - %d \n",key[i], value[i]);
     }
+    
     
     return 0;
 }
