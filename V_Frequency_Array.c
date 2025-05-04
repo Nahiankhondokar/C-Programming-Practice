@@ -3,7 +3,7 @@ int main ()
 {
     int n, m;
     scanf("%d %d", &n, &m);
-    int arr[n];
+    int arr[100000];
     int freq[m];
 
     for (int i = 1; i <= m; i++)
@@ -26,6 +26,5 @@ int main ()
         printf("%d \n", freq[i]);
     }
     
-
     return 0;
 }
