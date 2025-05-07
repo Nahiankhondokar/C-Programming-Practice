@@ -2,6 +2,7 @@
 // sum any of 2 number from an array and find 9.
 // 5  size
 // 3 6 5 8 4 array
+// assending order
 int main ()
 {
     int n;
@@ -22,9 +23,15 @@ int main ()
                 arr[i] = arr[j];
                 arr[j] = tem;
             }
+
+            // for (int i = 0; i < n; i++)
+            // {
+            //     printf("%d ", arr[i]);
+            // }
+
+            // printf("\n");
         }
-        
-    }
+    }  
     
     for (int i = 0; i < n; i++)
     {
