@@ -4,20 +4,14 @@ int main ()
     int n;
     scanf("%d", &n);
     char str[n];
-    int digits[n];
     scanf("%s", &str);
     int count = 0;
     for (int i = 0; i < n; i++)
     {
-        digits[i] = str[i];
+        count += str[i] - '0';
     }
 
-    // for (int i = 0; i < n; i++)
-    // {
-    //     count = count + digits[i];
-    // }
-
-    printf("%d", digits[1]);
+    printf("%d", count);
     
     return 0;
 }
