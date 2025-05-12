@@ -1,15 +1,25 @@
-#include<stdio.h>
+// #include<stdio.h>
 
-void sum (int num1, int num2)
-{
-    int ans = num1 + num2;
-    return;
-    printf("%d", ans);
-}
+// int main ()
+// {
+//     int n;
+//     scanf("%d", &n);
+//     int start = 1;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int k = 1; k < n-i; k++)
+//         {
+//             printf(" ");
+//         }
+        
+//         for (int j = 0; j < start; j++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//         start += 2;
+//     }
+    
+//     return 0;
+// }
 
-int main ()
-{
-    sum(10, 20);
-    printf("hello");
-    return 0;
-}
