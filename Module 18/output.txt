@@ -1,1 +1,2 @@
-This is not primary diagonal matrix
+flag 
+This is not secandary diagonal matrix
