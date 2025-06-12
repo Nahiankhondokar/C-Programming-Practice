@@ -1,6 +1,16 @@
 #include<stdio.h>
 int main ()
 {
+
+    /**
+     * Up-Arrow Pattern
+     *   #
+     *  ###
+     * #####
+     *   #
+     *   #
+     *   #
+     */
     int n;
     scanf("%d", &n);
     int stars = 6;
