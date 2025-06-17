@@ -4,6 +4,10 @@
  * scanf -> std::cin >> 
  * new line "\n" -> std::endl
  * space -> << " " <<
+ * 
+ * ascii value print -> std::cout << (int)a <<
+ * EOF -> while loop
+ * 
  */
 int main()
 {
