@@ -2,6 +2,7 @@
 
 /**
  * Checking Primary diagola matrix
+ * 
  */
 int main ()
 {
