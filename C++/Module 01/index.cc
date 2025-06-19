@@ -1,11 +1,14 @@
 #include<iostream>
+using namespace std;
+#include<iomanip>
+#include<algorithm>
 /**
  * printf -> std::cout <<
  * scanf -> std::cin >> 
  * new line "\n" -> std::endl
  * space -> << " " <<
  * 
- * ascii value print -> std::cout << (int)a <<
+ * ascii value print -> std::cout << (int)a
  * EOF -> while loop
  * 
  */
