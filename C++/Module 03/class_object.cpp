@@ -11,17 +11,20 @@ using namespace std; // for std globally
  */
 class Student {
     public :
-    char name[100];
-    int roll;
-    double gpa;
+    char name[100]; // 100 byte
+    int roll;       // 4 byte
+    double gpa;     // 8 byte
 };
 
 int main()
 {
-    Student a,b;
+    // Student a,b; combind declaration class
+
+    Student a;
     cin.getline(a.name, 100); // with space
     cin >> a.roll >> a.gpa;
 
+    Student b;
     cin.ignore(); // skip the enter after first data
     cin.getline(b.name, 100); // with space
     cin >> b.roll >> b.gpa;
