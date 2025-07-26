@@ -28,7 +28,7 @@ int main ()
         }
     }
     else {
-        cout << "Wroing";
+        cout << "Wrong";
     }
     
     
