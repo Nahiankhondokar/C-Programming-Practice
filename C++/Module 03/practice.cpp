@@ -2,47 +2,68 @@
 using namespace std; 
 
 /**
-* 1 -> test case
+ * 
+ */
+int main()
+{
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
+
+    sort(arr, arr+n);
+    for (int j = 0; j < n; j++)
+    {
+        cout << arr[j] << " ";
+    }
+    return 0;
+}
+
+
+/**
+* 1 -> test case multiple
 * 4 -> array number
 * 20 1 9 4 -> array value
 
  * arr[0]+arr[1]+b-a = sum
  *  1<=b<a<=N
  */
-int main ()
-{
-    int t;
-    cin >> t;
+// int main ()
+// {
+//     int t;
+//     cin >> t;
 
-    for (int z = 0; z < t; z++){
-        int n;
-        cin >> n;
-        int arr[n];
-        for (int i = 0; i < n; i++){
-            cin >> arr[i];
-        }
+//     for (int z = 0; z < t; z++){
+//         int n;
+//         cin >> n;
+//         int arr[n];
+//         for (int i = 0; i < n; i++){
+//             cin >> arr[i];
+//         }
 
-        int a = 0;
-        int b = 0;
+//         int a = 0;
+//         int b = 0;
 
-        int result = INT_MAX;
-            for (int j = 0; j < n; j++){
-                for (int k = j+1; k < n; k++){
-                    a = j+1;
-                    b = k+1;
-                    // cout << arr[j] << " " << arr[k] << " " << b << " " << a << endl;
-                    int cal = arr[j]+arr[k]+b-a;
-                    if(result > cal){
-                        result = cal;
-                    }
-                }
-        }
+//         int result = INT_MAX;
+//             for (int j = 0; j < n; j++){
+//                 for (int k = j+1; k < n; k++){
+//                     a = j+1;
+//                     b = k+1;
+//                     // cout << arr[j] << " " << arr[k] << " " << b << " " << a << endl;
+//                     int cal = arr[j]+arr[k]+b-a;
+//                     if(result > cal){
+//                         result = cal;
+//                     }
+//                 }
+//         }
 
-        cout << result << endl;
-    }
+//         cout << result << endl;
+//     }
     
-    return 0;
-}
+//     return 0;
+// }
 
 /**
  * 5
