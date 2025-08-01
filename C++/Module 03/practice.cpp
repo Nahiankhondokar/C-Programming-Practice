@@ -1,8 +1,14 @@
 #include<bits/stdc++.h> 
 using namespace std; 
 
+/**
+ * -10 = 10
+ * 10 < 9
+ * 5 > 6
+ * Print Right or Wrong
+ */
 int main ()
-{
+{  
     int a;
     char s;
     int b;
@@ -31,7 +37,5 @@ int main ()
         cout << "Wrong";
     }
     
-    
-
     return 0;
 }
