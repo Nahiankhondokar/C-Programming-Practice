@@ -38,33 +38,30 @@ using namespace std;
 /**
  * Question - 02
  * Sort descending in another function
+ * Dynamic array in separate function 
  */
-long long int* sort_it(long long int arr[], long long n)
+long long int* sort_it(long long int n)
 {
+    long long int* arr = new long long int[n];
+    for (long long int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
     sort(arr, arr+n, greater<long long int>());
     return arr;
 }
 
 int main()
 {
-
     long long int n;
     cin >> n;
-    long long int* arr = new long long int[n];
-     long long int* arr = new long long int[n];
 
-    for (long long int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-
-    long long int* sorted = sort_it(arr, n);
+    long long int* sorted = sort_it(n);
 
     for (long long int i = 0; i < n; i++)
     {
         cout << sorted[i] << " ";
     }
 
-    delete[] arr;
     return 0;
 }
