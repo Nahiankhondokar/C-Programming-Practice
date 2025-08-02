@@ -40,27 +40,53 @@ using namespace std;
  * Sort descending in another function
  * Dynamic array in separate function 
  */
-long long int* sort_it(long long int n)
-{
-    long long int* arr = new long long int[n];
-    for (long long int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-    sort(arr, arr+n, greater<long long int>());
-    return arr;
-}
+// long long int* sort_it(long long int n)
+// {
+//     long long int* arr = new long long int[n];
+//     for (long long int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+//     sort(arr, arr+n, greater<long long int>());
+//     return arr;
+// }
 
+// int main()
+// {
+//     long long int n;
+//     cin >> n;
+
+//     long long int* sorted = sort_it(n);
+
+//     for (long long int i = 0; i < n; i++)
+//     {
+//         cout << sorted[i] << " ";
+//     }
+
+//     return 0;
+// }
+
+/**
+ *  Question 03
+ */
 int main()
 {
-    long long int n;
-    cin >> n;
+    char str[1000000];
+    char newStr[1000000];
+    while(cin.getline(str, 1000000)){
 
-    long long int* sorted = sort_it(n);
+        int newInx = 0;
+        for (int i = 0; str[i] != '\0' ; i++)
+        {
+            if(str[i] != ' '){
+                newStr[newInx++] = str[i]; 
+            }
+        }
 
-    for (long long int i = 0; i < n; i++)
-    {
-        cout << sorted[i] << " ";
+        newStr[newInx] = '\0';
+        sort(newStr,newStr+newInx);
+        
+        cout << newStr << endl;
     }
 
     return 0;
