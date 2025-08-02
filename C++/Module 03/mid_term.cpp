@@ -39,6 +39,8 @@ using namespace std;
  * Question - 02
  * Sort descending in another function
  * Dynamic array in separate function 
+ * 5
+ * 8 6 1 5 4
  */
 // long long int* sort_it(long long int n)
 // {
@@ -68,6 +70,11 @@ using namespace std;
 
 /**
  *  Question 03
+ *  String sort without line break spacing.
+ * monkey
+ * i  love code
+ * ekmnoy
+ * cdeeiloov
  */
 int main()
 {
@@ -75,6 +82,7 @@ int main()
     char newStr[1000000];
     while(cin.getline(str, 1000000)){
 
+        // remove spaces
         int newInx = 0;
         for (int i = 0; str[i] != '\0' ; i++)
         {
