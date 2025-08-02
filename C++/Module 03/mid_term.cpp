@@ -76,26 +76,76 @@ using namespace std;
  * ekmnoy
  * cdeeiloov
  */
+// int main()
+// {
+//     char str[1000000];
+//     char newStr[1000000];
+//     while(cin.getline(str, 1000000)){
+
+//         // remove spaces
+//         int newInx = 0;
+//         for (int i = 0; str[i] != '\0' ; i++)
+//         {
+//             if(str[i] != ' '){
+//                 newStr[newInx++] = str[i]; 
+//             }
+//         }
+
+//         newStr[newInx] = '\0';
+//         sort(newStr,newStr+newInx);
+        
+//         cout << newStr << endl;
+//     }
+
+//     return 0;
+// }
+
+
+/** 
+ * Questio 04
+ * Find the highest mark information
+ * 3 -> test case
+1 sakib A 50
+2 rakib D 96
+3 akib C 90
+1 sakib A 50
+2 rakib D 96
+3 akib C 96
+1 sakib A 50
+2 rakib D 50
+3 akib C 40
+ */
 int main()
 {
-    char str[1000000];
-    char newStr[1000000];
-    while(cin.getline(str, 1000000)){
+    int t;
+    cin >> t;
 
-        // remove spaces
-        int newInx = 0;
-        for (int i = 0; str[i] != '\0' ; i++)
+    for (int j = 0; j < t; j++)
+    {
+        string name;
+        int id;
+        char section;
+        int mark;
+
+        int markFlag = INT_MIN;
+        int idFlag = 0;
+        char sectionFlag = ' ';
+        string nameFlag = "";
+        for (int i = 0; i < 3; i++)
         {
-            if(str[i] != ' '){
-                newStr[newInx++] = str[i]; 
+            cin >> id >> name >> section >> mark;
+            if(markFlag < mark){
+                idFlag = id;
+                nameFlag = name;
+                sectionFlag = section;
+                markFlag = mark;
             }
         }
 
-        newStr[newInx] = '\0';
-        sort(newStr,newStr+newInx);
-        
-        cout << newStr << endl;
+        cout << idFlag << " " << nameFlag << " " << sectionFlag << " "   << markFlag << endl;
+
     }
+    
 
     return 0;
 }
