@@ -115,37 +115,98 @@ using namespace std;
 2 rakib D 50
 3 akib C 40
  */
+// int main()
+// {
+//     int t;
+//     cin >> t;
+
+//     for (int j = 0; j < t; j++)
+//     {
+//         string name;
+//         int id;
+//         char section;
+//         int mark;
+
+//         int markFlag = INT_MIN;
+//         int idFlag = 0;
+//         char sectionFlag = ' ';
+//         string nameFlag = "";
+//         for (int i = 0; i < 3; i++)
+//         {
+//             cin >> id >> name >> section >> mark;
+//             if(markFlag < mark){
+//                 idFlag = id;
+//                 nameFlag = name;
+//                 sectionFlag = section;
+//                 markFlag = mark;
+//             }
+//         }
+
+//         cout << idFlag << " " << nameFlag << " " << sectionFlag << " "   << markFlag << endl;
+
+//     }
+    
+
+//     return 0;
+// }
+
+
+
+/**
+ * Question 05
+ * Get the sum value by any three digits.
+ * Multi layer array.
+ * when we use nested array, we need to remember one thing, if the full nested array can run then run the array. otherwise array will not excecute.like,
+ * we have 3 nested array but 2 arrays condition is true anothers condition is false then the full array will not execute.
+ * Here has the perfect example for the nested array
+ */
 int main()
 {
     int t;
     cin >> t;
+    
 
-    for (int j = 0; j < t; j++)
-    {
-        string name;
-        int id;
-        char section;
-        int mark;
+   for (int z = 0; z < t; z++)
+   {
+        int n;
+        cin >> n;
+        int s;
+        cin >> s;
 
-        int markFlag = INT_MIN;
-        int idFlag = 0;
-        char sectionFlag = ' ';
-        string nameFlag = "";
-        for (int i = 0; i < 3; i++)
+        int arr[n];
+        for (int i = 0; i < n; i++)
         {
-            cin >> id >> name >> section >> mark;
-            if(markFlag < mark){
-                idFlag = id;
-                nameFlag = name;
-                sectionFlag = section;
-                markFlag = mark;
+            cin >> arr[i]; 
+        }
+        
+        int flag = 0;
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = i+1; j < n; j++)
+            {
+                for (int k = j+1; k < n; k++)
+                {
+                    int sum = arr[i] + arr[j] + arr[k];
+                    if(sum == s){
+                        // cout << arr[i] << arr[j] << arr[k] << endl;
+                        // cout << i << j << k << endl;
+                        flag = 1;
+                        break;
+                    }else {
+                        // cout << arr[i] << arr[j] << arr[k] << endl;
+                        // cout << i << j << k << endl;
+                     }
+                }
             }
         }
 
-        cout << idFlag << " " << nameFlag << " " << sectionFlag << " "   << markFlag << endl;
-
-    }
-    
+        if(flag == 1){
+            cout << "YES" << endl;
+        }else {
+            cout << "NO" << endl;
+        }
+   }
+   
 
     return 0;
 }
