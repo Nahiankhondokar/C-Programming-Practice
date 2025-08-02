@@ -159,6 +159,18 @@ using namespace std;
  * when we use nested array, we need to remember one thing, if the full nested array can run then run the array. otherwise array will not excecute.like,
  * we have 3 nested array but 2 arrays condition is true anothers condition is false then the full array will not execute.
  * Here has the perfect example for the nested array
+ * intpus:
+ * 5
+5 10
+1 2 3 4 5
+5 6
+4 2 3 5 4
+3 6
+2 2 2
+4 4
+2 8 1 5
+1 3
+1
  */
 int main()
 {
