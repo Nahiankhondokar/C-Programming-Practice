@@ -1,5 +1,13 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "new": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "istream": "cpp",
+        "random": "cpp",
+        "functional": "cpp"
     }
 }

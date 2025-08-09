@@ -160,7 +160,7 @@ using namespace std;
  * we have 3 nested array but 2 arrays condition is true anothers condition is false then the full array will not execute.
  * Here has the perfect example for the nested array
  * intpus:
- * 5
+5
 5 10
 1 2 3 4 5
 5 6

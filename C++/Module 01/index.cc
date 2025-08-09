@@ -2,7 +2,6 @@
 using namespace std;
 #include<iomanip>
 #include<algorithm>
-#include<bits/stdc++.h>
 /**
  * printf -> std::cout <<
  * scanf -> std::cin >> 
